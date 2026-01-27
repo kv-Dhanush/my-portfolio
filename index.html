@@ -6,6 +6,135 @@
     <title>Portfolio | ECE Student</title>
     <link rel="stylesheet" href="/css/style.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <style>
+        .hero-section {
+    height: 80vh;
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), 
+}
+
+/* Profile Photo Styling */
+.profile-img {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    border: 5px solid #fff;
+    object-fit: cover;
+}
+
+/* Hover Effects for Cards */
+.education-card {
+    transition: transform 0.3s ease;
+}
+
+.education-card:hover {
+    transform: translateY(-10px);
+    border-color: #0d6efd;
+}
+
+/* Simple Animation */
+.fade-in {
+    animation: fadeIn 2s;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* Smooth Scrolling */
+html {
+    scroll-behavior: smooth;
+}
+.logo-name{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+.bg_img{
+    height: 80vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(/images/26422.jpg);
+    background-size: cover;
+    background-position: center;
+}
+/* Text Gradient for Headings */
+.text-gradient {
+    background: linear-gradient(45deg, #0d6efd, #00d4ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Glassmorphism Card Effect */
+.skill-card {
+    background: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.07);
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.skill-card:hover {
+    transform: translateY(-12px) scale(1.02);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+    background: #fff;
+}
+
+/* Icon Animation */
+.icon-box i {
+    transition: all 0.5s ease;
+}
+
+.skill-card:hover .icon-box i {
+    transform: rotateY(180deg); /* Icon flips on hover */
+    color: #0d6efd !important;
+}
+
+/* Styling the Progress Bar */
+.progress {
+    background-color: #e9ecef;
+    overflow: visible; /* Allows glowing effect if needed */
+}
+
+.progress-bar {
+    border-radius: 10px;
+    transition: width 1.5s ease-in-out;
+}
+.contact-item {
+    transition: transform 0.3s ease;
+}
+
+.contact-item:hover {
+    transform: translateY(-5px);
+}
+
+/* Social Icon Styling */
+.social-icon {
+    width: 50px;
+    height: 50px;
+    background: #2b2f33;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    color: white;
+    text-decoration: none;
+    font-size: 1.5rem;
+    transition: all 0.3s ease;
+}
+
+/* Individual Brand Colors on Hover */
+.social-icon.li:hover { background: #0077b5; box-shadow: 0 0 15px #0077b5; }
+.social-icon.ig:hover { background: #e4405f; box-shadow: 0 0 15px #e4405f; }
+.social-icon.gh:hover { background: #333; box-shadow: 0 0 15px #ffffff55; }
+
+.social-icon:hover {
+    color: white;
+    transform: scale(1.1);
+}
+
+.tracking-widest {
+    letter-spacing: 0.2rem;
+}
+    </style>
 </head>
 <body>
 <!-- nav bar -->
